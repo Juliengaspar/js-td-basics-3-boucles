@@ -22,3 +22,8 @@ CORRECTION :
 - Incrémentez 'nombre' à chaque itération pour éviter une boucle infinie.
 
 */
+let number = 1;
+while (number <=5) {
+    console.log(number);
+    number++
+}
