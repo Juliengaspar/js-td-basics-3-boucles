@@ -24,9 +24,17 @@ EXEMPLE 5 :
 BONUS :
 - Après avoir quitté la boucle, affichez dans la console la chaîne complète saisie par l'utilisateur en concaténant les lettres.
 */
+let lettreEntree = prompt("Tapez X pour sortir : ");
+let chainneEntree = "";
 
+while (lettreEntree !== "X" && lettreEntree !== "x"){
+    chainneEntree = chainneEntree + lettreEntree;
+    lettreEntree = prompt("Tapez X pour sortir : ");
 
-
+}
+//voire tous la liste des chaines entrées avant de mettres x
+console.log(chainneEntree);
+console.log("bien joué vous avez entrée X");
 
 
 // code avec le bonus
