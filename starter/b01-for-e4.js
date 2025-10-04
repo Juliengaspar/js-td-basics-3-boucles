@@ -25,3 +25,11 @@
     - que se passe-t-il si vous avez déclaré i avec let ?
     - que se passe-t-il si vous déclarez i avec var ?
 */
+const tablesMultiples = parseInt(prompt("valeurs de la table de multiplication"))
+console.log(`Voici les 10 premières valeurs de la table de multiplication par ${tablesMultiples}`)
+for (let i = 0; i <=10; i++) {
+    console.log(`${i} * ${tablesMultiples} = ${i*tablesMultiples}`);
+
+}
+//avec let il me met une erreur "i is not defined" alors qu'avec var il me met la valeur de 11
+console.log(i)
