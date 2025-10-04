@@ -22,3 +22,11 @@
   - Écrivez l'expression à afficher dans le console.log d'une manière alternative,
     en utilisant le concept de template littéral.
 */
+const operateur= 5;
+const operantes= 7;
+
+for (let i = 0; i <=operateur ; i++) {
+    for (let j = 0; j <=operantes ; j++) {
+        console.log(`${i}*${j} = ${i*j}`);
+    }
+}
