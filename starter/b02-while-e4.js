@@ -20,3 +20,12 @@ Pour chaque itération, assurez-vous de vous arrêter après avoir affiché les 
 */
 
 
+const  tablesMultiples = parseInt(prompt("choisir la table de multiplication que vous souhaite afficher"));
+
+let i = 0;
+    console.log(`Voici les 10 premières valeurs de la table de multiplication par ${tablesMultiples}.`);
+while (i <=10) {
+    console.log(`${i} * ${tablesMultiples} = ${i*tablesMultiples}`);
+    i++
+}
+
