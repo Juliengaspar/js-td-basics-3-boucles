@@ -32,4 +32,4 @@ for (let i = 0; i <=10; i++) {
 
 }
 //avec let il me met une erreur "i is not defined" alors qu'avec var il me met la valeur de 11
-console.log(number)
+console.log(tablesMultiples)
