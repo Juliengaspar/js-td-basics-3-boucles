@@ -19,3 +19,33 @@ Ecrivez un programme qui va deviner le nombre auquel vous avez pensé (voir livr
 	ces fonctions, y compris leurs paramètres et les valeurs qu'elles retournent.
 */
 // Écrivez le code JavaScript pour résoudre cet exercice en essayant de deviner le nombre auquel l'utilisateur pense.
+const number = parseInt(prompt('entrer un nombre entier entre [1 et 10]'))
+
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max+1);
+}
+
+let nbrAleatoire;
+let trouvee = false;
+
+let nbrEssaie = 0;
+if (number >0 && number <= 10 ){
+
+    while (trouvee === false){
+        nbrAleatoire = getRandomInt(10);
+
+        if (nbrAleatoire === number){
+            trouvee = true;
+            console.log(trouvee);
+            console.log(`J'ai trouvé en ${nbrEssaie} essai ! Vous pensiez à ${number}`);
+
+        }else {
+            trouvee = false;
+            nbrEssaie = nbrEssaie+1;
+        }
+    }
+
+}else {
+    console.log("vous avez entrée un nombres superieur a 10 ou inférieir à 0 ");
+}
