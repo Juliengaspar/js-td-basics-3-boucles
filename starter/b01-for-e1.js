@@ -23,6 +23,7 @@ EXEMPLE 1 :
 */
 
 // 1°) sans boucle : Écrivez ici toutes les instructions à la main, une par une
+console.log("sans la boucle for");
 console.log(1);
 console.log(2);
 console.log(3);
@@ -33,6 +34,8 @@ console.log(7);
 console.log(8);
 console.log(9);
 console.log(10);
+
+console.log("avec la boucle for");
 // 2°) avec boucle FOR : Écrivez ici le code de la boucle FOR
 for (let i = 1; i <= 10; i++) {
     console.log(i);

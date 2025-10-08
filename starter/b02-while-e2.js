@@ -25,7 +25,7 @@ EXEMPLE 2 :
 */
 
 console.log("Le manège démarre");
-let i = 1
+let i = 1;
 while(i<=10){
     console.log(`C'est le tour numéro ${i}`);
     i++;

@@ -26,16 +26,14 @@ BONUS :
 */
 let lettreEntree = prompt("Tapez X pour sortir : ");
 let chainneEntree = "";
-
-while (lettreEntree !== "X" && lettreEntree !== "x"){
-    chainneEntree = chainneEntree + lettreEntree;
+while((lettreEntree !== "x") && (lettreEntree !== "X")) {
+    chainneEntree = chainneEntree +" " +  lettreEntree;
     lettreEntree = prompt("Tapez X pour sortir : ");
-
 }
-//voire tous la liste des chaines entrées avant de mettres x
-console.log(chainneEntree);
-console.log("bien joué vous avez entrée X");
 
+console.log('voici tous les lettres que vous avez tapper avant X pour sortir');
+console.log(chainneEntree);
+console.log('bien joué vous avez reussi a tapper sur la touche X ou x pour sortir');
 
 // code avec le bonus
 
