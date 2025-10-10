@@ -22,6 +22,17 @@ CORRECTION :
 - Incrémentez 'nombre' à chaque itération pour éviter une boucle infinie.
 
 */
+/*
+//ceci fait une boucle infinir car la condition est toujour vrai car il n'as pas de incrementation de la valeur number
+let number = 1;
+while (number <=5) {
+    console.log(number);
+}
+
+* */
+
+
+
 let number = 1;
 while (number <=5) {
     console.log(number);
