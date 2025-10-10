@@ -20,6 +20,13 @@ CORRECTION :
 - La boucle 'for' a déjà une initialisation, une condition et une étape intégrées, vous n'avez qu'à définir le corps de la boucle.
 
 */
+/*
+for (let i = 0; i <= 5) {
+    console.log(i)
+    i++
+}
+
+ */
 
 for (let i = 1; i <=5 ; i++) {
     console.log(i)
