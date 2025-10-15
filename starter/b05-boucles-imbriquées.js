@@ -30,3 +30,13 @@ for (let i = 0; i <=operateur ; i++) {
         console.log(`${i}*${j} = ${i*j}`);
     }
 }
+
+//debugger ouvrir la console.log
+console.log("boucle imbriquer prof");
+for (let i = 0; i <= 5; i++) {
+    //debugger//mots clef reserver du langage, l'endroit ou arreter le code et ou on peux exeecuter etapes par etapes manuellement
+    console.log("i"+ "=" +  i)
+    for (let j = 0; j < 10 ; j++) {
+    console.log("j"+ "=" +  j)
+    }
+}

@@ -17,7 +17,30 @@
 /* EXEMPLE 5 : Boucler à l'envers
 - Affichez dans la console : "3, 2, 1, partez !"
 */
+//boucle inverser
+//i-- reculer
+console.log("version simple")
 for (let i =3; i >0 ; i--) {
     console.log(i);
 }
 console.log("partez");
+console.log("version complexe")
+for (let i =3; i >=0 ; i--) {
+    if (i >= 1) {
+        console.log(i)
+    } else {
+        console.log("partez");
+    }
+}
+let tmp = "";
+console.log("version complexe sur une ligne")
+for (let i =3; i >=0 ; i--) {
+    if (i >= 1) {
+        //tmp = tmp + i + ',';
+        tmp +=  i + ',';
+    } else {
+       // tmp = tmp + "partez!";
+        tmp +=  i + 'partez!';
+    }
+}
+console.log(tmp)

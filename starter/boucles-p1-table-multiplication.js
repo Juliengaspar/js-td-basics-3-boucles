@@ -18,20 +18,34 @@ N.B. Faites-le de deux manières différentes :
 // avec WHILE
 // Répétez le même processus avec une boucle WHILE, en demandant à nouveau la table de multiplication et le nombre de valeurs
 
-const tableMultiplication = prompt("Quelle table de multiplication souhaitez-vous afficher ? La table de multiplication par");
-const nombreValeur = prompt("Combien de valeurs souhaitez-vous afficher pour cette table ?");
+const tables = parseInt(prompt("Quelle table souhaitez-vous avoir ?"));
+const x = parseInt(prompt("Combien d’éléments souhaitez-vous avoir?"));
+console.log('table de multiplication prof ')
+if (!isNaN(tables) && !isNaN(x)) {
+    console.log('yeah')
+    for (let j = 0; j <= x; j++) {
+        // ? : ${i<10 ? ' ': ''}//tester si i est inferieur à 10;
+        console.log(` ${j<10 ? ' ': ''} ${j} * ${tables} = ${j*tables}`)
+    }
+}else {
+    console.log("il me faut un nombre pour table et le nombre d'element");
+}
 
+
+/*
 let result;
 console.log("avec la boucle for");
-for (let i=0 ;i<=nombreValeur; i++){
-    result= i*tableMultiplication;
+for (let i=0 ; i<=x; i++){
+    result= i*tables;
     //console.log(`${i} * ${tableMultiplication} = ${result}`);
-    console.log(`   ${tableMultiplication} * ${i} = ${result} `);
+    console.log(`   ${tables} * ${i} = ${result} `);
 }
 console.log("avec la boucle while");
 let i = 0;
-while (i<= nombreValeur){
-    result= i*tableMultiplication;
-    console.log(`   ${tableMultiplication} * ${i} = ${result} `);
+while (i<= x){
+    result= i*tables;
+    console.log(`   ${tables} * ${i} = ${result} `);
     i++
 }
+
+ */

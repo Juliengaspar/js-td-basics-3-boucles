@@ -24,16 +24,34 @@ EXEMPLE 5 :
 BONUS :
 - Après avoir quitté la boucle, affichez dans la console la chaîne complète saisie par l'utilisateur en concaténant les lettres.
 */
-let lettreEntree = prompt("Tapez X pour sortir : ");
-let chainneEntree = "";
-while((lettreEntree !== "x") && (lettreEntree !== "X")) {
-    chainneEntree = chainneEntree +" " +  lettreEntree;
-    lettreEntree = prompt("Tapez X pour sortir : ");
+/*
+console.log('version prof')
+let userInput = '';
+let letters = '';
+while (userInput !== "X") {
+    userInput = prompt("Tapez X pour sortir : ");
+    letters += userInput;//acumuler tous les choix qu'on a faits
+}
+console.log(letters);
+
+ */
+console.log('version prof pour sortir quand on rentres un nombre ');
+let userNumber = NaN;//regarde si la value is NaN
+while (isNaN(userNumber)) {
+    userNumber = parseInt(prompt("entrez un nombre: "));
+}
+console.log(userNumber);
+/*
+while((userInput !== "x") && (userInput !== "X")) {
+    letters = letters +" " +  userInput;
+    userInput = prompt("Tapez X pour sortir : ");
 }
 
 console.log('voici tous les lettres que vous avez tapper avant X pour sortir');
-console.log(chainneEntree);
+console.log(letters);
 console.log('bien joué vous avez reussi a tapper sur la touche X ou x pour sortir');
+
+ */
 
 // code avec le bonus
 
