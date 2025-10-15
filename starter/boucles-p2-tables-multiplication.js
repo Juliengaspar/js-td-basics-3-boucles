@@ -23,7 +23,7 @@ let result;
 for (let j=1 ; j<=tableMultiplication;j++) {
     for (let i = 1; i <= nombreValeur; i++) {
         result = i * j;
-        console.log(`${i} * ${j} = ${result}`);
+        console.log(` ${j} * ${i} = ${result}`);
     }
 }
 

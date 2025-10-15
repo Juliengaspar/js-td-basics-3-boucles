@@ -23,15 +23,15 @@ const nombreValeur = prompt("Combien de valeurs souhaitez-vous afficher pour cet
 
 let result;
 console.log("avec la boucle for");
-for (let i=1 ;i<=nombreValeur; i++){
+for (let i=0 ;i<=nombreValeur; i++){
     result= i*tableMultiplication;
     //console.log(`${i} * ${tableMultiplication} = ${result}`);
-    console.log(`Voici les ${i} * ${tableMultiplication} premières valeurs de la table de multiplication par ${result} `);
+    console.log(`   ${tableMultiplication} * ${i} = ${result} `);
 }
 console.log("avec la boucle while");
-let i = 1;
+let i = 0;
 while (i<= nombreValeur){
     result= i*tableMultiplication;
-    console.log(`Voici les ${i} * ${tableMultiplication} premières valeurs de la table de multiplication par ${result} `);
+    console.log(`   ${tableMultiplication} * ${i} = ${result} `);
     i++
 }

@@ -47,5 +47,5 @@ if (number >0 && number <= 10 ){
     }
 
 }else {
-    console.log("vous avez entrée un nombres superieur a 10 ou inférieir à 0 ");
+    console.log("vous avez entrée un nombres superieur a 10 ou inférieur à 0 ");
 }
